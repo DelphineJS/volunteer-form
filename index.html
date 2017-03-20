@@ -11,13 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 </head>
 <body>
-<header>
-  <h1>Apply to be a tree planter</h1>
-  <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-</header>
+
+  <header>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </header>
+
   <form method="post" action="#">
+
     <fieldset>
-    <legend>Personal Details</legend>
+      <legend>Personal details</legend>
       <div>
         <label for="name">Full name</label>
         <input id="name" name="name">
@@ -50,15 +53,16 @@
       </div>
       <div>
         <label for="email">Email</label>
-        <input id="email" name="email">
+        <input id="email" type="email" name="email">
       </div>
       <div>
         <label for="tel">Phone number <span>(optional)</span></label>
         <input id="tel" type="tel" name="tel">
       </div>
     </fieldset>
+
     <fieldset>
-    <legend>Address</legend>
+      <legend>Address</legend>
       <div>
         <label for="street-address">Street Address</label>
         <input id="street-address" name="street-address">
@@ -90,8 +94,9 @@
         <input id="postal-code" name="postal-code">
       </div>
     </fieldset>
+
     <fieldset>
-    <legend>What activities are you interested in helping with?</legend>
+      <legend>What activities are you interested in helping with?</legend>
       <div>
         <input type="checkbox" id="digging">
         <label for="digging">Digging holes</label>
@@ -125,8 +130,9 @@
         <label for="managing">Managing people</label>
       </div>
     </fieldset>
+
     <fieldset>
-    <legend>Do you have any experience with the following?</legend>
+      <legend>Do you have any experience with the following?</legend>
       <div>
         <input type="checkbox" id="shovels">
         <label for="shovels">Shovels</label>
@@ -168,14 +174,43 @@
         <label for="speaking">Speaking to groups</label>
       </div>
     </fieldset>
+
     <fieldset>
-    <legend>Do you have a valid driver’s license?</legend>
+      <legend>Do you have a valid driver’s license?</legend>
+      <input id="yes-drivers" type="radio" name="agree">
+      <label for="yes-drivers">Yes</label>
+      <input id="no-drivers" type="radio" name="agree">
+      <label for="no-drivers">No</label>
     </fieldset>
 
+    <fieldset>
+      <legend>Do you have a pick-up truck you'd be willing to use?</legend>
+      <input id="yes-truck" type="radio" name="agree">
+      <label for="yes-truck">Yes</label>
+      <input id="no-truck" type="radio" name="agree">
+      <label for="no-truck">No</label>
+    </fieldset>
 
+    <fieldset>
+      <legend>Do you have up-to-date first-aid certification?</legend>
+      <input id="yes-first-aid" type="radio" name="agree">
+      <label for="yes-first-aid">Yes</label>
+      <input id="no-first-aid" type="radio" name="agree">
+      <label for="no-first-aid">No</label>
+    </fieldset>
 
+    <fieldset>
+      <legend>Please let us know any comments or questions you may have.</legend>
+      <div>
+        <textarea id="comments" name="comments"></textarea>
+      </div>
+    </fieldset>
 
   </form>
+
+  <button type="submit">Apply</button>
+
+  <footer>© Tree Hugger International Organization</footer>
 
 </body>
 </html>
