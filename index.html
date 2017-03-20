@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 </head>
 <body>
-<div class="">
+<header>
   <h1>Apply to be a tree planter</h1>
   <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-</div>
+</header>
   <form method="post" action="#">
     <fieldset>
     <legend>Personal Details</legend>
@@ -30,7 +30,7 @@
       </div>
       <div>
         <label for="date-of-birth">Date of birth</label>
-        <input id="date-of-birth" name="date-of-birth" type="date" placeholder="yyyy-mm-dd">
+        <input id="date-of-birth" name="date-of-birth" type="date">
       </div>
       <div>
         <label for="t-shirt-size">T-shirt size</label>
@@ -53,40 +53,41 @@
         <input id="email" name="email">
       </div>
       <div>
-        <label for="telephone">Phone number <span>(optional)</span></label>
-        <input type="tel" name="telephone">
+        <label for="tel">Phone number <span>(optional)</span></label>
+        <input id="tel" type="tel" name="tel">
       </div>
     </fieldset>
     <fieldset>
     <legend>Address</legend>
-    <div>
-      <label for="street-address">Street Address</label>
-      <input id="street-address" name="street-address">
-    </div>
-    <div>
-      <label for="city">City</label>
-      <input id="city" name="city">
-    </div>
-    <div>
-      <label for="province">Province</label>
-      <select id="province" name="province">
-        <option value="">Select a province</option>
-        <option>Alberta</option>
-        <option>British Columbia</option>
-        <option>Manitoba</option>
-        <option>New Brunswick</option>
-        <option>Newfoundland & Labrador</option>
-        <option>Northwest Territories</option>
-        <option>Nunavut</option>
-        <option>Ontario</option>
-        <option>Prince Edward Island</option>
-        <option>Québec</option>
-        <option>Saskatchewan</option>
-        <option>Yukon</option>
-      </select>
+      <div>
+        <label for="street-address">Street Address</label>
+        <input id="street-address" name="street-address">
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input id="city" name="city">
+      </div>
+      <div>
+        <label for="province">Province</label>
+        <select id="province" name="province">
+          <option value="">Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
       <div>
         <label for="postal-code">Postal code</label>
-        <input type="postal-code" name="postal-code">
+        <input id="postal-code" name="postal-code">
       </div>
     </fieldset>
     <fieldset>
@@ -166,6 +167,9 @@
         <input type="checkbox" id="speaking">
         <label for="speaking">Speaking to groups</label>
       </div>
+    </fieldset>
+    <fieldset>
+    <legend>Do you have a valid driver’s license?</legend>
     </fieldset>
 
 
